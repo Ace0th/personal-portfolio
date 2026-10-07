@@ -5,3 +5,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 
 .hero-avatar{position:absolute;z-index:4;top:26px;left:13%;width:72px;height:72px;object-fit:cover;border-radius:50%;border:2px solid var(--lime);box-shadow:0 8px 32px #0009}.profile-preview{width:90px;height:90px;object-fit:cover;border-radius:50%;border:2px solid var(--lime);margin:0 0 22px}.admin-head form{margin:0}.admin-head form button{font:inherit}
+
+.form-note{grid-column:2;color:#929daa;font-size:11px;margin:-12px 0 0}@media(max-width:600px){.form-note{grid-column:1;margin:-18px 0 0}}

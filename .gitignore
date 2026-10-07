@@ -1,16 +1,8 @@
-# Private settings and local/runtime artifacts
-.env*
-!.env.example
-.venv/
-venv/
+# Static build output and local tooling
+/dist/
+/node_modules/
+/.vercel/
 __pycache__/
 *.py[cod]
-instance/
-uploads/
-app/static/uploads/*
-!app/static/uploads/.gitkeep
-*.db
-*.sqlite
-*.sqlite3
-.pytest_cache/
-*.log
+.DS_Store
+Thumbs.db

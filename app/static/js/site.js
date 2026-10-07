@@ -6,6 +6,9 @@
   const siteNav = document.getElementById('site-nav');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  const year = document.getElementById('current-year');
+  if (year) year.textContent = String(new Date().getFullYear());
+
   const updateScroll = () => {
     const max = document.documentElement.scrollHeight - innerHeight;
     progress.style.width = `${max > 0 ? scrollY / max * 100 : 0}%`;
@@ -63,4 +66,18 @@
   }));
   document.querySelector('.dialog-close')?.addEventListener('click', () => dialog.close());
   dialog?.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+
+  document.querySelector('[data-contact-form]')?.addEventListener('submit', event => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const values = new FormData(form);
+    const body = [
+      `Name: ${values.get('name')}`,
+      `Email: ${values.get('email')}`,
+      '',
+      String(values.get('message') || '')
+    ].join('\n');
+    const subject = encodeURIComponent(String(values.get('subject') || 'Portfolio contact'));
+    window.location.href = `mailto:theofficialalamin@gmail.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+  });
 })();
