@@ -1,0 +1,16 @@
+# Private settings and local/runtime artifacts
+.env*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+instance/
+uploads/
+app/static/uploads/*
+!app/static/uploads/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+.pytest_cache/
+*.log
