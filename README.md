@@ -36,7 +36,11 @@ npx serve dist
 3. Keep the detected build command `npm run build` and output directory `dist`.
 4. Deploy. No environment variables, database, server, or paid add-ons are required.
 
-Every push to `main` can trigger a new deployment once the GitHub repository is connected.
+Every push to `main` triggers a new deployment from the connected GitHub repository.
+
+## Live site
+
+[Open the portfolio](https://personal-portfolio-six-blue-97.vercel.app/)
 
 ## Projects
 
@@ -58,11 +62,11 @@ A full-stack employee management app for secure team records, role-based access,
 
 **Title:** Personal Portfolio — Md Alamin Sk  
 **Description:** Personal portfolio showcasing my projects, technical skills, and work building web applications.  
-**URL:** Add the Vercel URL after the first deployment.
+**URL:** https://personal-portfolio-six-blue-97.vercel.app/
 
 ## LinkedIn post draft
 
 I’ve built a personal portfolio to share my projects, technical interests, and what I’m learning. It features a responsive design, project filters, and a static contact form.
 
-Portfolio: add the Vercel URL after deployment  
+Portfolio: https://personal-portfolio-six-blue-97.vercel.app/  
 GitHub: https://github.com/Ace0th/personal-portfolio
